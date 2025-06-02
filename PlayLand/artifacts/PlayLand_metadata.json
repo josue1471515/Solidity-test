@@ -1,0 +1,327 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "event_disableAttraction",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "event_enjoyAttraction",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "event_newAttraction",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameAttraction",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "AddAttraction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameAttraction",
+						"type": "string"
+					}
+				],
+				"name": "DisableAttraction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "EnableAttractions",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameAtraction",
+						"type": "string"
+					}
+				],
+				"name": "EnjoyAttraction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "GenerateTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Historical",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "MappingAttractions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name_attraction",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price_attraction",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "state_attraction",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MyTokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "RevertTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "client_data",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokes_purchased",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameToken",
+				"outputs": [
+					{
+						"internalType": "contract ERC20Basic",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PlayLand/PlayLand.sol": "PlayLand"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Libs/SafeMath.sol": {
+			"keccak256": "0x7125d075ca625f5c488b6086b391351654c9d6fafbef74155f6d468a7fd94ec0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://04faa4478defc3dea2b79742a1c42c32542c398bd183e7e6d3ad603d8ea468ad",
+				"dweb:/ipfs/QmZLEetfnvvzcprG7aUTjEU4mHjVy3JV1HYmvY126EKNn7"
+			]
+		},
+		"PlayLand/ERC20Basic.sol": {
+			"keccak256": "0x8fd9edc7b4970a1ce1b087e7f6cda2c3e63b772956712a531edd4ecc28b94951",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a5c1a41077cba206bd3b6a19a64563efca92bf7c7135a94b3169bcb750fb23a5",
+				"dweb:/ipfs/QmatJnifq1ofk2tLG5NiC31MwJuRijQEYHPst4Ej9FGsR3"
+			]
+		},
+		"PlayLand/PlayLand.sol": {
+			"keccak256": "0x08240e2a352dd910121757e18096bfa5ca804c666e42e661035c218d57c203ab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe84d6560fe79eac1756ef66cc8fe32e4f85e4face6bb10783a83927b4989dc2",
+				"dweb:/ipfs/QmRLpP7t3Me1tBy4ZQDL4T1KZwJiPnjrq18GU9PV9nHZG9"
+			]
+		}
+	},
+	"version": 1
+}
